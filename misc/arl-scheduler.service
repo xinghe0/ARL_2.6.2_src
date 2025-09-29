@@ -1,0 +1,13 @@
+[Unit]
+Description=ARL Worker Service
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/root/ARL_2.6.2/ARL
+ExecStart=/root/miniconda3/envs/arl/bin/python -m app.scheduler
+
+[Install]
+WantedBy=multi-user.target
+
