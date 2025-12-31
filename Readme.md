@@ -23,7 +23,7 @@ docker volume create arl_db
 docker-compose up -d
 ```
 
-若不能正常登录，可能是用户没事生成，执行以下语句
+若不能正常登录，可能是用户没生成，执行以下语句
 
 docker exec -ti arl_mongodb mongo admin
 use admin
