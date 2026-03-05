@@ -24,4 +24,3 @@ def oneforall(domain):
     for i in range(len(data)):
         oneforall_data.append(f"http://{data[i]['subdomain']}")
     return list(set(oneforall_data))
-
